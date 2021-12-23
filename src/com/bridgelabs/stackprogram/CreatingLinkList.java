@@ -4,14 +4,22 @@ public class CreatingLinkList {
     public static  INode head;
     public INode tail;
 
+
     public CreatingLinkList() {
-        this.head = null;
+        head = null;
         this.tail = null;
     }
 
+
+    public INode pop() {
+        INode tempNode = this.head;
+        this.head = head.getNext();
+        return tempNode;
+    }
+
     public void add(INode newNode) {
-        if (this.head == null) {
-            this.head = newNode;
+        if (head == null) {
+            head = newNode;
         }
         if (this.tail == null) {
             this.tail = newNode;

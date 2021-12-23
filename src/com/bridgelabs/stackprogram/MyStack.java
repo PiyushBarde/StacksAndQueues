@@ -1,21 +1,25 @@
 package com.bridgelabs.stackprogram;
 
 public class MyStack {
-    private static CreatingLinkList creatingLinkList;
+    private final CreatingLinkList creatingLinkList;
 
     public MyStack() {
-        creatingLinkList = new CreatingLinkList();
+        this.creatingLinkList = new CreatingLinkList();
     }
 
 
-    public static void push(INode myNode){
+    public  void push(INode myNode){
         creatingLinkList.add(myNode);
 
     }
-    public void printMyNode(){
+    public void printMyNode()
+    {
         creatingLinkList.printMyNode();
     }
     public INode peak(){
         return creatingLinkList.head;
+    }
+    public void pop(){
+        creatingLinkList.pop();
     }
 }
