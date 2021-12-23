@@ -4,7 +4,8 @@ public class OrderedLinkList {
     public static INode head;
     public INode tail;
 
-    public OrderedLinkList() {
+    public OrderedLinkList()
+    {
         this.head = null;
         this.tail = null;
     }

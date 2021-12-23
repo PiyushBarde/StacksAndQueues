@@ -17,7 +17,8 @@ public class MyNode<T extends Comparable> implements INode<T>{
         return next;
     }
 
-    public void setNext(INode next) {
+    public void setNext(INode next)
+    {
         this.next = (MyNode<T>)next;
     }
 

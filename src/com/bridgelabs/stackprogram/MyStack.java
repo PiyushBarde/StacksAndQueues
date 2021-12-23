@@ -8,7 +8,8 @@ public class MyStack {
     }
 
 
-    public  void push(INode myNode){
+    public  void push(INode myNode)
+    {
         creatingLinkList.add(myNode);
 
     }

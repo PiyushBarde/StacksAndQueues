@@ -44,18 +44,6 @@ public class CreatingLinkList {
         System.out.println(myNodes);
     }
 
-//    public void printList(){
-//        if(head==null){
-//            System.out.println("List is empty");
-//            return;
-//        }
-//        INode tempNode = head;
-//        while(tempNode != null){
-//            System.out.println(tempNode+ " -> ");
-//            tempNode.setNext(tempNode);
-//        }
-//        System.out.println(tempNode.getKey());
-//    }
 
     public void append(INode newNode) {
         if (this.head == null) {
@@ -109,7 +97,7 @@ public class CreatingLinkList {
         while (tempNode != null) {
             if (myNode.getKey() == tempNode.getKey()) {
                 INode temp = tempNode.getNext();
-                //tempNode= null;
+                tempNode= null;
                 INode demoNode = this.head;
                 demoNode = demoNode.getNext();
                 demoNode.setNext(temp);

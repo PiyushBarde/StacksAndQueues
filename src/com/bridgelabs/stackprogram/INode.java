@@ -7,5 +7,4 @@ public interface INode<T extends Comparable> {
     INode getNext();
     void setNext(INode next);
 
-
 }
